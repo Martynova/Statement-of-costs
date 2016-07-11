@@ -4,7 +4,8 @@
     <div class="form-group">
       <label for="inputDate" class="col-lg-2 control-label">Date</label>
       <div class="col-lg-10">
-        {{input value=model.dataName type="text" class="form-control" id="inputDate" placeholder="Date"}}
+      {{pikaday-input value=model.dataName format="YYYY-MM-DD" class="form-control"}}
+        
       </div>
     </div>
     <div class="form-group">
@@ -16,13 +17,13 @@
     <div class="form-group">
       <label for="inputSer" class="col-lg-2 control-label">Service</label>
       <div class="col-lg-10">
-        {{input value=mosel.coastSer type="text" class="form-control" id="inputSer" placeholder="Coast on service"}}
+        {{input value=model.coastSer type="text" class="form-control" id="inputSer" placeholder="Coast on service"}}
       </div>
     </div>
     <div class="form-group">
       <label for="inputStat" class="col-lg-2 control-label">Gas station</label>
       <div class="col-lg-10">
-      {{input value=mosel.coastReffil type="text" class="form-control" id="inputStat" placeholder="Coast on gas station"}}
+      {{input value=model.coastReffil type="text" class="form-control" id="inputStat" placeholder="Coast on gas station"}}
         
       </div>
     </div>
