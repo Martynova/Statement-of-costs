@@ -1,0 +1,38 @@
+<form class="form-horizontal" {{action "save" on="submit"}}>
+  <fieldset>
+    <legend>New coast</legend>
+    <div class="form-group">
+      <label for="inputDate" class="col-lg-2 control-label">Date</label>
+      <div class="col-lg-10">
+        {{input value=model.dataName type="text" class="form-control" id="inputDate" placeholder="Date"}}
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputCar" class="col-lg-2 control-label">Car</label>
+      <div class="col-lg-10">
+        {{input value=model.coastCar type="text" class="form-control" id="inputCar" placeholder="Coast on car"}}       
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputSer" class="col-lg-2 control-label">Service</label>
+      <div class="col-lg-10">
+        {{input value=mosel.coastSer type="text" class="form-control" id="inputSer" placeholder="Coast on service"}}
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputStat" class="col-lg-2 control-label">Gas station</label>
+      <div class="col-lg-10">
+      {{input value=mosel.coastReffil type="text" class="form-control" id="inputStat" placeholder="Coast on gas station"}}
+        
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button type="reset" class="btn btn-default" {{action "cancel"}}>Cancel</button>
+        <input type="submit" class="btn btn-primary" value="Save"/>
+      </div>
+    </div>  
+    
+  </fieldset>
+</form>
