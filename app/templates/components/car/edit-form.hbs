@@ -1,10 +1,10 @@
-<form class="form-horizontal" {{action "save" on="submit"}}>
+<form class="form-horizontal" {{action "save" model on="submit"}}>
   <fieldset>
     <legend>New coast</legend>
     <div class="form-group">
       <label for="inputDate" class="col-lg-2 control-label">Date</label>
       <div class="col-lg-10">
-      {{pikaday-input value=model.dataName format="YYYY-MM-DD" class="form-control"}}
+      {{pikaday-input value=newDate format="YYYY-MM-DD" class="form-control"}}
         
       </div>
     </div>
