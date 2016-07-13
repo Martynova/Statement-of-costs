@@ -5,9 +5,7 @@ import Ember from 'ember';
 // import { belongsTo, hasMany } from 'ember-data/relationships';
 
 export default Model.extend({
-	dataName:attr('date', {
-    defaultValue() { return new Date(); }
-  }),
+	dataName:attr('string'),
 	coastCar:attr('number'),
 	coastSer:attr('number'),
 	coastReffil:attr('number')
