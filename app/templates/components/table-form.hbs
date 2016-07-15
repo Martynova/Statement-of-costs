@@ -1,0 +1,23 @@
+<table class="table table-striped table-hover ">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Data</th>
+      <th>Car</th>
+      <th>Service</th>
+      <th>Reffil</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#each model as |coasts index|}}
+
+      <tr>
+      <td>{{index-new index}}</td>
+      <td>{{coasts.dataName}}</td>
+      <td>{{coasts.coastCar}}</td>
+      <td>{{coasts.coastSer}}</td>
+      <td>{{coasts.coastReffil}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table> 
