@@ -6,18 +6,25 @@
       <th>Car</th>
       <th>Service</th>
       <th>Reffil</th>
+      <th></th>
+      <th>Totall coasts</th>
     </tr>
   </thead>
   <tbody>
   {{#each model as |coasts index|}}
 
-      <tr>
+    <tr>
       <td>{{index-new index}}</td>
       <td>{{coasts.dataName}}</td>
       <td>{{coasts.coastCar}}</td>
       <td>{{coasts.coastSer}}</td>
       <td>{{coasts.coastReffil}}</td>
+      <td><a href="#" class="btn btn-primary btn-xs" {{action "delete" coasts}}>-</a>
+      {{link-to "+" "dashboard.car.edit" coasts.id class="btn btn-info btn-xs" }}
+      </td>
+      <td>{{coasts.fullCoast}}</td>
     </tr>
     {{/each}}
   </tbody>
 </table> 
+

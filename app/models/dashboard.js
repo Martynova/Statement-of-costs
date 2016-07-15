@@ -8,6 +8,11 @@ export default Model.extend({
 	dataName:attr('string'),
 	coastCar:attr('number'),
 	coastSer:attr('number'),
-	coastReffil:attr('number')
+	coastReffil:attr('number'),
+	fullCoast: Ember.computed('coastCar', 'coastSer', 'coastReffil',{
+		get(){
+			return this.get('coastCar')+this.get('coastSer')+this.get('coastReffil');
+		}
+	})
 
 });
