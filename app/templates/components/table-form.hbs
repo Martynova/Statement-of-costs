@@ -11,7 +11,7 @@
     </tr>
   </thead>
   <tbody>
-  {{#each model as |coasts index|}}
+  {{#each sortedDashboard as |coasts index|}}
 
     <tr>
       <td>{{index-new index}}</td>
@@ -22,9 +22,11 @@
       <td><a href="#" class="btn btn-primary btn-xs" {{action "delete" coasts}}>-</a>
       {{link-to "+" "dashboard.car.edit" coasts.id class="btn btn-info btn-xs" }}
       </td>
-      <td>{{coasts.fullCoast}}</td>
+      <td>{{coasts.fullCoast}} </td>
+
     </tr>
     {{/each}}
+    {{log "model" coasts.dataName}}
   </tbody>
 </table> 
-
+<button> Totall:{{sortOneDay}}</button>
